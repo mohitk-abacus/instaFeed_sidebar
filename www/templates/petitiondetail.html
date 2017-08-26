@@ -1,0 +1,229 @@
+<div class="bar bar-header dasboard-header">
+    <button class="button icon ion-navicon-round none-background" menu-toggle="left"></button>
+    <h1 class="title"><img src="img/instafeed-logo.png" alt=""></h1>
+    <a class="button none-background upload-icon" href="#/app/newsupload" name="newsupload"><img src="img/upload.png" alt=""></a>
+    
+    <button class="button icon ion-ios-search-strong search-icon" ng-click="addClass()"></button>
+    
+</div>
+
+<div class="bar bar-header item-input-inset top-search">
+    <label class="item-input-wrapper">
+        <i class="icon ion-ios-search placeholder-icon"></i>
+        <input type="search" placeholder="Search">
+    </label>
+    <button class="button none-background button-clear button-assertive" ng-click="removeClass()">
+        Cancel
+    </button>
+</div>
+
+
+
+<ion-scroll direction="x" class="scroll-tabs">
+    <ul>
+        <li>
+            <a href="#/app/newslisting" name="newslisting">News</a>
+        </li>
+        <li>
+            <a href="#/app/talentslisting" name="talentslisting">Talents</a>
+        </li>
+        <li>
+            <a href="#/app/explorelisting" name="explorelisting">Explorer</a>
+        </li>
+        <li>
+            <a href="" name="">Opinions</a>
+        </li>
+        <li>
+            <a href="#/app/petitionslisting" name="petitionslisting">Petitions</a>
+        </li>
+        <li class="active">
+            <a href="#/app/pollslisting" name="pollslisting">Polls</a>
+        </li>
+        <li>
+            <a href="" name="">Blogs</a>
+        </li>
+    </ul>
+</ion-scroll>
+
+
+
+<ion-content class="has-subheader">
+    
+    <div class="news-header padding">
+        <h2>WATCH: 19-yr-old break-dancing Barbie, Dytto, wows in India with ‘Tip Tip Barsa Paani</h2>
+        
+        <div class="ex-detail">
+            <ul>
+                <li>
+                    <a href="">LifeStyle</a>,
+                </li>
+                <!-- <li>
+                    <span>Faridabad</span>
+                </li> -->
+                <li>
+                    <span>Aug, 10,2017 &nbsp; 07:12 AM</span>,
+                </li>
+                <li>
+                    <a href="#/app/userprofile" name="userprofile">Avinash Kr</a>
+                </li>
+            </ul>
+            <p class="adrees"><i class="icon ion-ios-location" style="color:#000"></i> &nbsp; 5E/7 , B.P., Railway Road, Near Neelam Chowk, NIT Faridabad, Haryana 121001 </p>
+        </div>
+    </div>
+    
+    <!-- <div class="news-dt">
+        <div class="outer">
+            <div class="inner">
+                <img src="img/dytto_twitter_759.jpg" alt="">
+            </div>
+        </div>
+    </div> -->
+    
+    
+    <ion-slides class="news-dt-slider"  options="options" slider="data.slider">
+        <!-- SLIDE 1  -->
+        <ion-slide-page>
+            <div class="outer">
+                <div class="inner">
+                    <img src="img/dytto_twitter_759.jpg" alt="">
+                </div>
+            </div>
+        </ion-slide-page>
+        
+        <!-- SLIDE 2  -->
+        <ion-slide-page>
+            <div class="outer">
+                <div class="inner">
+                    <img src="img/dytto_twitter_759.jpg" alt="">
+                </div>
+            </div>
+        </ion-slide-page>
+        
+        <!-- SLIDE 3  -->
+        <ion-slide-page>
+            <div class="outer">
+                <div class="inner">
+                    <img src="img/dytto_twitter_759.jpg" alt="">
+                </div>
+            </div>
+        </ion-slide-page>
+        
+    </ion-slides>
+    
+    <div class="tl-comment-sect total-views">
+        <div class="row">
+            <div class="col col-50 total-cmt-share">
+                <ul class="text-left">
+                    <li>320 VIEWS</li>
+                </ul>
+            </div>
+            <div class="col col-50 total-cmt-share">
+                <ul class="text-right">
+                    <li>5 SHARE</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    <div class="cnt padding">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae aut possimus incidunt soluta! Ab incidunt soluta totam ratione. A deleniti voluptates dignissimos sequi laudantium dolore atque expedita accusantium eaque asperiores.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae aut possimus incidunt soluta! Ab incidunt soluta totam ratione. A deleniti voluptates dignissimos sequi laudantium dolore atque expedita accusantium eaque asperiores.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae aut possimus incidunt soluta! Ab incidunt soluta totam ratione. A deleniti voluptates dignissimos sequi laudantium dolore atque expedita accusantium eaque asperiores.</p>
+    </div>
+    
+    <div class="tl-comment-sect">
+        <div class="row">
+            <div class="col text-center">
+                <div class="button-type-2">
+                    <button>
+                        Sign this Petition
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="petition-user">
+            <div class="row">
+                <div class="col">
+                    <p class="text-center">Users who signed this petition <span>(Total signs: 4)</span></p>
+
+                    <ul class="text-center">
+                        <li><span>Rahul Ghnadi</span></li>
+                        <li><span>Pankaj verma</span></li>
+                        <li><span>sonia dubey</span></li>
+                        <li><span>ramcharn mishra</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="tl-like-cmt-sect">
+        <div class="row">
+            <div class="col col-30 text-left">
+                <i class="icon ion-chatbox"></i> <span>Comment</span>            
+            </div>
+            <div class="col col-30 total-like green total-dislike">
+                <div class="thumb">
+                    <i class="icon ion-chatbox green"></i> <font>50</font>
+                </div>
+            </div>
+            <div class="col col-30 text-right">
+                <i class="icon ion-android-share"></i> <span>Share</span>             
+            </div>
+        </div>
+    </div>
+    
+    <div class="comment-box">
+        
+        <div class="list">
+            
+            <div class="item item-thumbnail-left">
+                <img src="img/ben.png">
+                <h2>Pretty Hate Machine</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, enim. Recusandae dolori</p>
+                <a class="rply-btn">Reply</a>
+                
+                <div class="item item-thumbnail-left rply-box">
+                    <img src="img/ben.png" class="profile-icon">
+                                        
+                    <ul>
+                        <li><input type="text" placeholder="Type a message"></li>
+                        <li><button class="button button-small icon ion-arrow-right-c"></button></li>
+                    </ul>
+
+                </div>  
+                
+            </div>  
+            
+            <div class="item item-thumbnail-left">
+                <img src="img/adam.jpg">
+                <h2>Pretty Hate Machine</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>  
+            
+        </div>
+        
+    </div>
+    
+    
+    <div class="write-comment-box">
+        <div class="chat-input">
+            <div class="list">
+                <div class="item item-input-inset">
+                    
+                    <label class="item-input-wrapper">
+                        <input type="text" placeholder="Type a message">
+                    </label>
+                    
+                    <button class="button button-small icon ion-arrow-right-c"></button>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</ion-content>

@@ -1,0 +1,122 @@
+<div class="bar bar-header dasboard-header">
+    <button class="button icon ion-navicon-round none-background" menu-toggle="left"></button>
+    <h1 class="title"><img src="img/instafeed-logo.png" alt=""></h1>
+    <a class="button none-background upload-icon" href="#/app/newsupload" name="newsupload"><img src="img/upload.png" alt=""></a>
+    
+    <button class="button icon ion-ios-search-strong search-icon" ng-click="addClass()"></button>
+
+</div>
+
+<div class="bar bar-header item-input-inset top-search">
+    <label class="item-input-wrapper">
+        <i class="icon ion-ios-search placeholder-icon"></i>
+        <input type="search" placeholder="Search">
+    </label>
+    <button class="button none-background button-clear button-assertive" ng-click="removeClass()">
+        Cancel
+    </button>
+</div>
+
+
+<ion-content class="has-header">
+    <!-- <div class="m-space" style="height: 44px;"></div> -->
+    
+    <div class="profile-sect">
+        <div class="profile-header">
+            <h2>mohit k</h2>
+        </div>
+        
+        <div class="profile-icon">
+            <img src="img/me.png" alt="">
+            
+            <button class="button" ng-click="camera_click()">
+                <i class="icon ion-android-camera"></i>
+            </button> 
+        </div>
+        
+        <div class="follow-following">
+            <div class="followers">
+                <h3>323</h3>
+                <p>Followers</p>
+            </div>
+            <div class="following">
+                <h3>143</h3>
+                <p>Following</p>
+            </div>
+        </div>
+        
+        <div class="button-type-3 text-center">
+            <button>edit profile</button>
+        </div>
+    </div>
+    
+    <div class="list edit-profile-listing">
+        
+        <label class="item item-input item-floating-label">
+            <span class="input-label">First Name</span>
+            <input type="text" value="Mohit">
+        </label>
+        
+        <label class="item item-input item-floating-label">
+            <span class="input-label">Middle Name</span>
+            <input type="text" value="--">
+        </label>
+        
+        <label class="item item-input item-floating-label">
+            <span class="input-label">Last Name</span>
+            <input type="text" value="Kashyup">
+        </label>
+        
+        <label class="item item-input item-floating-label">
+            <span class="input-label">Profile</span>
+            <input type="text" value="http://instafeed.org/profile/mohitk">
+        </label>
+        
+        <label class="item item-input item-floating-label">
+            <span class="input-label">Email ID</span>
+            <input type="text" value="sdvdsvds">
+        </label>
+        
+        <label class="item item-input item-floating-label">
+            <span class="input-label">mohitk@abacusdesk.co.in</span>
+            <input type="text" value="sdvdsvds">
+        </label>
+        
+        <label class="item item-input item-floating-label">
+            <span class="input-label">Contact No</span>
+            <input type="text" value="--">
+        </label>
+        
+        <label class="item item-input item-floating-label">
+            <span class="input-label">Date of Birth</span>
+            <input type="date" value="">
+        </label>
+        
+        <label class="item item-input item-select">
+            <div class="input-label">
+                Gender
+            </div>
+            <select>
+                <option>Female</option>
+                <option selected>Male</option>
+            </select>
+        </label>
+        
+        <label class="item item-input item-floating-label">
+            <span class="input-label">Location</span>
+            <input type="text" value="Faridabad">
+        </label>
+        
+        <label class="item item-input item-floating-label">
+            <span class="input-label">Bio</span>
+            <textarea>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable</textarea>
+            <!-- <input type="text" value=""> -->
+        </label>
+        
+        <label class="item item-input item-floating-label">
+            <span class="input-label">Website</span>
+            <input type="text" value="--">
+        </label>
+    </div>
+    
+</ion-content>

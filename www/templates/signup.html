@@ -1,0 +1,52 @@
+<ion-modal-view>
+    <ion-content class="signup">
+        
+        <button class="close-icon icon ion-close-circled" ng-click="closesignup()"></button>
+
+        <div class="padding">
+            <div class="logo text-center">
+                <img src="img/instafeed-logo.png" alt="">
+            </div>
+            <div class="list">
+                <label class="item item-input item-floating-label">
+                    <span class="input-label">First Name</span>
+                    <input type="text" placeholder="First Name">
+                </label>
+                <label class="item item-input item-floating-label">
+                    <span class="input-label">Last Name</span>
+                    <input type="text" placeholder="Last Name">
+                </label>
+                <label class="item item-input item-floating-label">
+                    <span class="input-label">Email ID</span>
+                    <input type="text" placeholder="Email ID">
+                </label>
+                <label class="item item-input item-floating-label">
+                    <span class="input-label">Password</span>
+                    <input type="text" placeholder="Password">
+                </label>
+                <label class="item item-input item-floating-label">
+                    <span class="input-label">Confirm Password</span>
+                    <input type="text" placeholder="Confirm Password">
+                </label>
+            </div>
+            
+            <p class="caption"> <label><input type="checkbox"> By clicking sign up, I agree to your Terms</label></p>
+
+            <div class="submit-btnn">
+                <button>
+                    SIGN UP
+                </button>
+            </div>
+
+            
+            <!-- lOGIN ACCOUNT -->
+            <div class="text-center">
+                <div class="lg-sn-btn">
+                    Already a member ? <a ng-click="login()">LOGIN</a>
+                </div>
+            </div>
+        </div>
+        
+
+    </ion-content>
+</ion-modal-view>

@@ -1,0 +1,96 @@
+<div class="bar bar-header dasboard-header">
+    <button class="button icon ion-navicon-round none-background" menu-toggle="left"></button>
+    <h1 class="title"><img src="img/instafeed-logo.png" alt=""></h1>
+    <a class="button none-background upload-icon" href="#/app/newsupload" name="newsupload"><img src="img/upload.png" alt=""></a>
+    
+    <button class="button icon ion-ios-search-strong search-icon" ng-click="addClass()"></button>
+
+</div>
+
+<div class="bar bar-header item-input-inset top-search">
+    <label class="item-input-wrapper">
+        <i class="icon ion-ios-search placeholder-icon"></i>
+        <input type="search" placeholder="Search">
+    </label>
+    <button class="button none-background button-clear button-assertive" ng-click="removeClass()">
+        Cancel
+    </button>
+</div>
+
+
+<ion-content class="padding newsupload has-header">
+    
+    <!-- <div class="m-space"></div> -->
+    
+    <div class="row typee">
+        <div class="col"><label><input type="radio">News</label></div>
+        <div class="col"><label><input type="radio">Talents</label></div>
+        <div class="col"><label><input type="radio">Explorer</label></div>
+    </div>
+    
+    <div class="form">
+        <div class="control">
+            <p class="caption">Add photos, videos and audio</p>
+            
+            <ul class="photo-video-upload-icon">
+                <li>
+                    <label>
+                        <img src="img/max.png" alt="">
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <button ng-click="uploads()">
+                            <i class="icon ion-plus"></i>
+                              <input type="file" style="display: none;">  
+                        </button>
+                    </label>
+                </li>
+            </ul>
+            
+            <label><p class="caption check"> <input type="checkbox"> Content violence and/or upsetting scenes</p></label>
+        </div>
+        
+        <div class="control">
+            <p class="caption">Write a caption</p>
+            
+            <textarea placeholder="Write a caption describing your news, you only have 130 character, so be creative!"></textarea>
+        </div>
+        
+        <div class="control">
+            <p class="caption">Explain what’s happening (optional)</p>
+            
+            <textarea placeholder="Explain what’s happening"></textarea>
+        </div>
+        
+        <div class="control">
+            <!-- <p class="caption">Select category</p> -->
+            <label class="item item-input item-select">
+                <div class="input-label">
+                    Select category
+                </div>
+                <select>
+                    <option selected>News</option>
+                    <option>Entertaintment</option>
+                    <option>Lifestyle</option>
+                    <option>Lifestyle</option>
+                    <option>Travel</option>
+                    <option>Sport</option>
+                    <option>Nation</option>
+                    <option>Politics</option>
+                    <option>Health</option>
+                    <option>Technology</option>
+                    <option>Life</option>
+                </select>
+            </label>
+        </div>
+
+         <label><p class="caption check"><input type="checkbox">&nbsp; Keep Me Anonymous</p></label>
+
+        <div class="control text-right">
+            <button ion-button type="submit" class="submit" block>PUBLISH</button>
+        </div>
+        
+    </div>
+    
+</ion-content>

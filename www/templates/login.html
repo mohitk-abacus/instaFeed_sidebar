@@ -1,25 +1,64 @@
 <ion-modal-view>
-  <ion-header-bar>
-    <h1 class="title">Login</h1>
-    <div class="buttons">
-      <button class="button button-clear" ng-click="closeLogin()">Close</button>
-    </div>
-  </ion-header-bar>
-  <ion-content>
-    <form ng-submit="doLogin()">
-      <div class="list">
-        <label class="item item-input">
-          <span class="input-label">Username</span>
-          <input type="text" ng-model="loginData.username">
-        </label>
-        <label class="item item-input">
-          <span class="input-label">Password</span>
-          <input type="password" ng-model="loginData.password">
-        </label>
-        <label class="item">
-          <button class="button button-block button-positive" type="submit">Log in</button>
-        </label>
-      </div>
-    </form>
-  </ion-content>
+    <ion-content>
+        
+        <button class="close-icon icon ion-close-circled" ng-click="closelogin()" style="color: #ffffff;"></button>
+
+        <div class="login-form">
+            <div class="logo text-center">
+                <img src="img/instafeed-logo-white.png" alt="">
+            </div>
+            
+            <div class="form-control">
+                <div class="field">
+                    <input type="text" placeholder="@username">
+                </div>
+                <div class="field">
+                    <input type="text" placeholder="password">
+                </div>
+                <div class="forgot-password">
+                    <a ng-click="forgotpassword()">Forgot Password ?</a>
+                </div>
+                <div class="go-btn text-center">
+                    <button>
+                        GO!
+                    </button>
+                </div>
+            </div>
+            
+            <div class="next-space">
+                <button>
+                    <i>OR</i>
+                </button>
+            </div>
+        </div>
+        
+        
+        <!-- SOCIAL LOGIN PART -->
+        <div class="social-login">
+            <div class="list text-center">
+                
+                <a class="item item-icon-left facebook item-positive" href="#">
+                    <i class="icon ion-social-facebook"></i>
+                    Login with Facebook
+                </a>
+                
+                
+                <a class="item item-icon-left google item-assertive" href="#">
+                    <i class="icon ion-social-googleplus"></i>
+                    Login with Google+
+                </a>
+                
+            </div>
+        </div>
+        
+        <!-- CREATE AN ACCOUNT -->
+        <div class="text-center">
+            <div class="lg-sn-btn">
+                <a ng-click="signup()">Create an Account</a>
+            </div>
+        </div>
+        
+        
+        
+    </ion-content>
 </ion-modal-view>

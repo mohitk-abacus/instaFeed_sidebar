@@ -1,0 +1,95 @@
+<div class="bar bar-header dasboard-header">
+    <button class="button icon ion-navicon-round none-background" menu-toggle="left"></button>
+    <h1 class="title"><img src="img/instafeed-logo.png" alt=""></h1>
+    <a class="button none-background upload-icon" href="#/app/newsupload" name="newsupload"><img src="img/upload.png" alt=""></a>
+    
+    <button class="button icon ion-ios-search-strong search-icon" ng-click="addClass()"></button>
+    
+</div>
+
+<div class="bar bar-header item-input-inset top-search">
+    <label class="item-input-wrapper">
+        <i class="icon ion-ios-search placeholder-icon"></i>
+        <input type="search" placeholder="Search">
+    </label>
+    <button class="button none-background button-clear button-assertive" ng-click="removeClass()">
+        Cancel
+    </button>
+</div>
+
+<ion-scroll direction="x" class="scroll-tabs">
+    <ul>
+        <li>
+            <a href="#/app/newslisting" name="newslisting">News</a>
+        </li>
+        <li>
+            <a href="#/app/talentslisting" name="talentslisting">Talents</a>
+        </li>
+        <li>
+            <a href="#/app/explorelisting" name="explorelisting">Explorer</a>
+        </li>
+        <li>
+            <a href="" name="">Opinions</a>
+        </li>
+        <li>
+            <a href="#/app/petitionslisting" name="petitionslisting">Petitions</a>
+        </li>
+        <li class="active">
+            <a href="#/app/pollslisting" name="pollslisting">Polls</a>
+        </li>
+        <li>
+            <a href="" name="">Blogs</a>
+        </li>
+    </ul>
+</ion-scroll>
+
+
+<div ng-class="class">
+    <a class="nav-item nav-count-1"><i class="icon ion-mic-a"></i><span class="invisible">Audio</span></a>
+    <a class="nav-item nav-count-2"><i class="icon ion-image"></i><span class="invisible">Gallery</span></a>
+    <a class="nav-item nav-count-3"><i class="icon ion-ios-videocam"></i><span class="invisible">Video</span></a>
+    <a class="nav-item nav-count-4"><i class="icon ion-camera"></i><span class="invisible">Camera</span></a>
+    <a ng-click="changeClass()" class="mask"><img src="img/circul-plus_64.png"></a>
+</div>
+
+
+
+<ion-content class="has-subheader pettion-listing">
+   
+    <div class="trending-poll padding-top">
+
+        <div class="list">
+            <div class="item item-thumbnail-left">
+                <img src="img/star-icon.png">
+                <h2>What Should we have for dinner we have for dinner</h2>
+                <p class="font-8em"><a href="#." class="font1em">Sonia Verma</a>, August 05, 17</p>
+            </div>
+        </div>
+
+        <div class="padding" style="margin:25px 0px;">
+            <img src="img/graph-chart.jpg" alt="" style="width: 100%;">
+        </div>
+
+        <div class="anser padding">
+            <ul>
+                <li>
+                    <label><h2>Chicken Katsu</h2> <div class="counter"><span><input type="radio"></span></div></label>
+                </li>
+                <li>
+                    <label><h2>Steak and Eggs</h2> <div class="counter"><span><input type="radio"></span></div></label>
+                </li>
+                <li>
+                   <label> <h2>Vegas Tacos</h2> <div class="counter"><span><input type="radio"></span></div></label>
+                </li>
+            </ul>
+        </div>
+
+        <div class="button-type-4 text-right padding-right" style="margin-top:20px;">
+            <button>vote</button>
+        </div>
+
+    </div>
+
+   
+
+</ion-content>
