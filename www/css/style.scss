@@ -73,6 +73,8 @@ $tab_blue : #247ba0;
 	background-image: -webkit-linear-gradient( 180deg, rgb(0,85,139) 0%, rgb(0,156,255) 100%);
 	background-image: -ms-linear-gradient( 180deg, rgb(0,85,139) 0%, rgb(0,156,255) 100%);
 }
+
+
 .right-left_gradient
 {
 	background-image: -moz-linear-gradient( 180deg, rgb(0,156,255) 0%, rgb(0,85,139) 100%);
@@ -522,6 +524,7 @@ ion-slides
 		border-radius: 6px;
 		box-shadow: 0px 0px 9.6px 0.4px rgba(0, 0, 0, 0.23);
 		background: #fff;
+		position: relative;
 
 		.outer
 		{
@@ -603,19 +606,23 @@ ion-slides
 				}
 			}
 		}
+
+		&.video-icon
+		{
+			&:after
+			{
+				content: "";
+				background: url(../img/video_22.png) no-repeat;
+				position: absolute;
+				top: 5px;
+				right: 5px;
+				z-index: 999;
+				width: 22px;
+				height: 13px;
+			}
+		}
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -773,12 +780,6 @@ ion-slides
 		}
 	}
 }
-
-
-
-
-
-
 
 
 
@@ -1089,9 +1090,7 @@ ion-slides
 		{
 			display: block;
 		}
-	}
-
-		
+	}	
 }
 
 .opacity
@@ -1099,49 +1098,64 @@ ion-slides
 	opacity: 0.2;
 }
 
-.chat-input
+
+.write-comment-box
 {
+	position: fixed;
 	width: 100%;
+	background: #fff;
+	bottom: 0;
+	left: 0;
 
-	.list
+	.chat-input
 	{
-		.item
+		width: 100%;
+
+		.list
 		{
-			padding: 5px;
-			border: 0;
-
-			label
+			.item
 			{
-				background: transparent;
-				margin: 0;
-				padding: 0;
-				font-weight: normal;
+				padding: 5px;
+				border: 0;
 
-				input
+				label
 				{
-					background: #fff;
-					border: solid 1px #ccc !important;
-					height: 40px !important;
-					border-radius: 20px;
-					width: 100%;
-					padding-left: 10px;
+					background: transparent;
+					margin: 0;
+					padding: 0;
+					font-weight: normal;
+
+					input
+					{
+						background: #fff;
+						border: solid 1px #ccc !important;
+						height: 40px !important;
+						border-radius: 20px;
+						width: 100%;
+						padding-left: 10px;
+					}
 				}
-			}
 
-			button
-			{
-				margin: 0;
-
-				&:before
+				button
 				{
-					font-size: 24px;
-					color: $color-blue;
+					margin: 0;
+
+					&:before
+					{
+						font-size: 24px;
+						color: $color-blue;
+					}
 				}
 			}
 		}
 	}
 }
 
+
+.bottom-space
+{
+	bottom: 50px;
+}
 
 
 
@@ -1338,6 +1352,8 @@ ion-slides
 		}
 	}
 } 
+
+
 
 .action-sheet-cancel .button
 {
